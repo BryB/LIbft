@@ -18,6 +18,9 @@
 # include <string.h>
 # include <stdio.h>
 
+#define BUFF_SIZE 128
+
+
 typedef	struct		s_list
 {
 	void			*content;
@@ -95,5 +98,7 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putnbr_fd(int n, int fd);
+
+int					get_next_line(const int fd, char **line);
 
 #endif
